@@ -42,7 +42,7 @@ object LDA_Topic_Y {
     // convert sitting_date column to date format
     val df2 = df1.withColumn("sitting_date", to_date($"sitting_date", "dd/MM/yyyy"))
 
-    df2.printSchema
+    // df2.printSchema
 
     // create new column speechTok with the tokenized speeches using regex
     val df3 = new RegexTokenizer().setInputCol("speech")
