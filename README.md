@@ -1,4 +1,4 @@
-# Analysis of the Greek Parliament Proceedings 1989 – 2020
+# Analysis of the Greek Parliament Proceedings '89 – '20
 Big Data Analytics Project - Fall 2021 
 
 ![pap](https://thesocialist.gr/wp-content/uploads/2021/06/papandreou3_2306.jpg)
