@@ -7,13 +7,16 @@ import scala.collection.mutable
 
 object LDA_Topic {
   def main(args: Array[String]): Unit = {
-
+    
+    val inputPath = "file:///path/to/file/csv"
+    val stopwordPath = "file:///path/to/stopwords/txt"
+    
     // Create a new spark session
     val ss = SparkSession.builder().appName("lda").master("local[*]").getOrCreate()
     ss.sparkContext.setLogLevel("ERROR")
 
     // load csv file as a data frame
-    val df = ss.read.option("header", "true").csv("file:///home/ozzy/IdeaProjects/LDA/subset2.csv")
+    val df = ss.read.option("header", "true").csv(inputPath)
 
     // Drop rows that contain NA's
     val df1 = df.na.drop()
@@ -27,7 +30,7 @@ object LDA_Topic {
       .transform(df1)
 
     // filter all the stopwords from speeches
-    val stopwords_gr = ss.sparkContext.textFile("file:///home/ozzy/IdeaProjects/LDA/stopwords.txt")
+    val stopwords_gr = ss.sparkContext.textFile(stopwordPath)
                                     .map(w => w.dropRight(2))
                                     .collect
                                     .toSet
