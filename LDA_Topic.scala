@@ -6,6 +6,7 @@ import org.apache.spark.sql.functions.udf
 import scala.collection.mutable
 
 object LDA_Topic {
+  
   def main(args: Array[String]): Unit = {
     
     val inputPath = "file:///path/to/file/csv"
