@@ -1,5 +1,5 @@
 # Analysis of the Greek Parliament Proceedings '89 – '20
-Big Data Analytics Project - Fall 2021 
+Big Data Analytics Project - Fall 2021  - [Link to *iMEdD* GitHub repo](https://github.com/iMEdD-Lab/Greek_Parliament_Proceedings)
 
 ![pap](https://thesocialist.gr/wp-content/uploads/2021/06/papandreou3_2306.jpg)
 ---
