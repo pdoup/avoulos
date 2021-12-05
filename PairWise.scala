@@ -124,6 +124,7 @@ object PairWise {
 
     // show top K most similar members
     val topK : Int = args(0).toInt
+    
     finalDF.sort(desc("CosineSim")).show(topK,false)
 
     ss.stop()
