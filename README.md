@@ -25,3 +25,10 @@ spark-submit \
   --total-executor-cores 4 \
   /path/to/examples.jar <add optional arguments here>
 ```
+
+---
+
+### **Some useful links**
+- [Spark ML Library Documetation](https://spark.apache.org/docs/3.0.1/ml-guide.html)
+- [Spark Tutorial](https://www.tutorialspoint.com/apache_spark/index.htm)
+- [Spark Tutorial YT](https://www.youtube.com/watch?v=S2MUhGA3lEw)
