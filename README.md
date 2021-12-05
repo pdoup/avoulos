@@ -10,3 +10,18 @@ Big Data Analytics Project - Fall 2021
 * [ ] Task 4 : Detect any significant deviation (per member, per party or in general) with respect to the speeches before and after the crisis
 * [ ] Task 5 : Taking into account all speeches, we need to detect if we can group them in meaningful clusters.Check about the participation of each member in each cluster and    also the participation of each party in the cluster.
 * [ ] Task 6 : TBD
+
+</hr>
+
+#### How to package and run a spark application
+
+1. Run ``` package ``` from the ``` sbt shell ``` (IntelliJ)
+2. Once the ``` .jar ``` is created in the ``` target ``` folder run this command once inside that folder
+```bash
+spark-submit \
+  --class <Name of the main class> \
+  --master local[*] \  
+  --executor-memory 8G \
+  --total-executor-cores 4 \
+  /path/to/examples.jar <add optional arguments here>
+```
