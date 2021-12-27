@@ -99,7 +99,7 @@ object PairWise {
       .toIndexedRowMatrix
 
     // once the matrix is transpose we can compute column-column cosine similarities for each pair of columns
-    val similaritiesDF = rowMatrix.columnSimilarities().entries.toDF(Seq("S1","S2","CosineSim") : _*).cache()
+    val similaritiesDF = rowMatrix.columnSimilarities().entries.toDF(Seq("S1","S2","CosineSim") : _*)
 
     // create an indexed data frame, the first column is the ascending index and the second the name of the member(id)
     val namesDF = cleanDF.withColumn("index", row_number().over(Window.orderBy("rFeatures")))
