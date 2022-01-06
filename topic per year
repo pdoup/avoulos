@@ -3014,6 +3014,6 @@ Term: παφίλη
 
     // run the LDA algorithm for a specific year
     // for year 1990 -> df_years(1)
-    for (z <- 0 to 29) {
+    for (z <- 0 to 30) {
       println("z",z)
       var ldaModel = new LDA().setK(k).setMaxIter(maxIter).fit(df_years(z))
