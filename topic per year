@@ -3010,7 +3010,7 @@ Term: παφίλη
 
    val k = 8
     val maxIter = 60
-    val maxWordsPerTopic_ = 15
+    val maxWordsPerTopic_ = 10
 
     // run the LDA algorithm for a specific year
     // for year 1990 -> df_years(1)
