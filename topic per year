@@ -2908,6 +2908,106 @@ Term: βαρδαλής
 Term: διορθώνετε
 Term: δολοφονήθηκαν
 
+(z,30)
+Topic: 0
+Term: ζητηθείσα
+Term: σημείο
+Term: εξουσιοδότηση
+Term: συνεδρίαση
+Term: λύσουμε
+Term: δέχεστε
+Term: παρέσχε
+Term: σώμα
+Term: πέμπτης
+Term: παρασκευής
+
+Topic: 1
+Term: σώματος
+Term: συνεδρίαση
+Term: συναίνεση
+Term: εργασιών
+Term: λύεται
+Term: προεδρος
+Term: αντικείμενο
+Term: γραμματεις
+Term: συζήτηση
+Term: ημέρα
+
+Topic: 2
+Term: υφυπουργέ
+Term: κλείστε
+Term: αθλητικούς
+Term: αθλητές
+Term: ανοιχτούς
+Term: συντομεύστε
+Term: υγείας
+Term: πειράζει
+Term: ποσοτικούς
+Term: πισίνες
+
+Topic: 3
+Term: ευχαριστώ
+Term: υπουργέ
+Term: νομοσχέδιο
+Term: χώρα
+Term: συριζα
+Term: ευρώ
+Term: ελλάδα
+Term: πολιτική
+Term: επίσης
+Term: έναν
+
+Topic: 4
+Term: σώμα
+Term: μαθητές
+Term: παρακολουθούν
+Term: βουλής
+Term: δυτικά
+Term: μαθήτριες
+Term: θεωρεία
+Term: τιμή
+Term: εκπαιδευτικοί
+Term: καλωσορίζει
+
+Topic: 5
+Term: ευχαριστούμε
+Term: συνάδελφε
+Term: υπουργέ
+Term: κυρία
+Term: ευχαριστώ
+Term: συριζα
+Term: δημοκρατία
+Term: λεπτό
+Term: χρόνο
+Term: δευτερολογία
+
+Topic: 6
+Term: ερώτηση
+Term: επίκαιρη
+Term: υπουργό
+Term: αριθμό
+Term: βουλευτή
+Term: κύκλου
+Term: απαντήσει
+Term: ελλάδας
+Term: αριστεράς
+Term: ριζοσπαστικής
+
+Topic: 7
+Term: «πράσινη»
+Term: νοεμβρίου
+Term: υπουργέ
+Term: ολοκληρώνετε
+Term: μηδέν
+Term: ατζέντα
+Term: κυρία
+Term: απειλείτε
+Term: διαστρέβλωση
+Term: παφίλη
+
+
+
+
    val k = 8
     val maxIter = 60
     val maxWordsPerTopic_ = 15
