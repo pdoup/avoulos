@@ -3,7 +3,7 @@ import org.apache.spark.sql.SparkSession
 val ss = SparkSession.builder()
                 .master("local[*]")
                 .appName("KMeans")
-                .config("spark.driver.memory", "4g")
+                //.config("spark.driver.memory", "4g")
                 .getOrCreate
 
 ss.sparkContext.getConf.getAll
