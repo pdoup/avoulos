@@ -1,0 +1,6 @@
+spark-submit --master local[2] --driver-memory 20g --class Kmeans --packages com.github.master:spark-stemming_2.10:0.2.1 kmeans_2.11-0.0.1.jar <n> <k>
+
+n : Number of most frequent words to take
+k : Number of clusters for K-Means
+
+Stemming library : https://github.com/master/spark-stemming (Snowball stemmer)
