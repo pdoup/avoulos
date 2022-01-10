@@ -145,7 +145,7 @@ object Kmeans {
 		kmeansDF.select("name", "prediction").write.option("header", true).csv(s"kmeans_member_K_${k}_stemming")
 		
 		println("Output written to csv file")
-
+ 
         ss.stop()
 	}
 }
