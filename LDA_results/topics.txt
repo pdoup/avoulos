@@ -1,4 +1,4 @@
-Topic: 0
+Topic: 0    #ΝΟΜΟΘΕΣΙΕΣ
 Term: νομοσχέδιο
 Term: άρθρο
 Term: διατάξεις
@@ -15,7 +15,7 @@ Term: ευχαριστώ
 Term: σχέδιο
 Term: ζητήματα
 
-Topic: 1
+Topic: 1  #ΥΓΕΙΑ
 Term: υγείας
 Term: νοσοκομείο
 Term: νοσοκομεία
@@ -32,7 +32,7 @@ Term: γιατροί
 Term: υπηρεσίες
 Term: ευχαριστώ
 
-Topic: 2
+Topic: 2 #ΠΡΑΚΤΙΚΑ_ΒΟΥΛΗΣ_ΠΕΡΙ_ΝΟΜΟΘΕΣΙΩΝ
 Term: άρθρο
 Term: άρθρου
 Term: παράγραφος
@@ -49,7 +49,7 @@ Term: περίπτωση
 Term: εδάφιο
 Term: λέξεις
 
-Topic: 3
+Topic: 3 #ΟΙΚΟΝΟΜΙΑ
 Term: πολιτική
 Term: ευρώ
 Term: χώρα
@@ -66,7 +66,7 @@ Term: ελλάδα
 Term: ανάπτυξης
 Term: κυβέρνησης
 
-Topic: 4
+Topic: 4 #ΠΡΑΚΤΙΚΑ_ΒΟΥΛΗΣ_ΠΕΡΙ_ΠΡΟΣΩΠΙΚΟΥ
 Term: βουλής
 Term: συζήτηση
 Term: εκπρόσωπος
@@ -83,7 +83,7 @@ Term: πρόεδρος
 Term: κανονισμού
 Term: προηγουμένως
 
-Topic: 5
+Topic: 5  #DEBATE_METAXI_KOMATWN
 Term: ευρώ
 Term: υπουργέ
 Term: υπουργός
@@ -100,7 +100,7 @@ Term: δημοκρατίας
 Term: τίποτα
 Term: εκατομμύρια
 
-Topic: 6
+Topic: 6  #DEBATE_ANAFORIKA_ME_ENERGEIES_PROIGOUMENWN_KOMMATWN
 Term: πρόβλημα
 Term: υπουργέ
 Term: κάνουμε
@@ -117,7 +117,7 @@ Term: πολλά
 Term: είμαι
 Term: κάνουν
 
-Topic: 7
+Topic: 7    #TROPOLOGIA_DIATA3EWN_IPOURGEIOU_ETHNIKIS_AMINIS
 Term: τροπολογία
 Term: υπουργέ
 Term: προσωπικό
@@ -134,7 +134,7 @@ Term: συμφωνούμε
 Term: δυνάμεων
 Term: ενόπλων
 
-Topic: 8
+Topic: 8  #PSIFISMA_NOMOSXEDIWN_
 Term: πλειοψηφία
 Term: άρθρο
 Term: υπουργό
@@ -151,7 +151,7 @@ Term: συζήτηση
 Term: κύριο
 Term: δημοκρατίας
 
-Topic: 9
+Topic: 9   #ENERGEIA_PERIBALLON
 Term: ενέργειας
 Term: περιβάλλοντος
 Term: έργο
@@ -168,7 +168,7 @@ Term: μελέτη
 Term: χώρα
 Term: φυσικό
 
-Topic: 10
+Topic: 10   #ZITIMATA_ESWTERIKIS_POLITIKIS
 Term: αχαΐας
 Term: δημοσίευμα
 Term: εφημερίδας
@@ -185,7 +185,7 @@ Term: αιτείται
 Term: βουλευτές
 Term: αθηνών
 
-Topic: 11
+Topic: 11 #MINIMATA_PROS_TO_LAO
 Term: χώρα
 Term: ελλάδα
 Term: πολιτική
@@ -202,7 +202,7 @@ Term: έλληνες
 Term: κοινωνία
 Term: πολιτικό
 
-Topic: 12
+Topic: 12 #PAIDEIA
 Term: υπουργείο
 Term: παιδείας
 Term: εκπαίδευσης
@@ -219,7 +219,7 @@ Term: ευχαριστώ
 Term: σύμφωνα
 Term: έργο
 
-Topic: 13
+Topic: 13 #DIADIKASTIKA_BOULIS
 Term: κυρία
 Term: συνάδελφε
 Term: υπουργέ
@@ -236,7 +236,7 @@ Term: είστε
 Term: διακόπτετε
 Term: μιλήσει
 
-Topic: 14
+Topic: 14  #PSIFOFORIA
 Term: ασυλίας
 Term: ψηφοφορία
 Term: λοβέρδο
