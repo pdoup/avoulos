@@ -27,7 +27,7 @@ object LDA_Topic {
       .setOutputCol("speechTok")
       .setMinTokenLength(4)
       .setToLowercase(true)
-      .setPattern("[\\s.,!-~'\";*^%#$@()&<>/ ]")
+      .setPattern("[\\s.,!-~'…\"’΄;*^%$@«?|»{}()&–<>/+_ ]")
       .transform(df1)
 
     // filter all the stopwords from speeches
