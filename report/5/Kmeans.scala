@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils
 /* 
    NOTE : This code is meant to run for parties only since the aggregation is done by parties. 
    	  To alter this so that it can be executed with members, all the instances of political_party
-	  can be changed to member_name.
+	  can be changed to member_name. In the zip file provided there are results for both members and parties
 */
 
 // Takes 2 command line parameters
