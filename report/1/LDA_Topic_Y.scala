@@ -11,7 +11,8 @@ import scala.collection.mutable
 
 
 object LDA_Topic_Y {
-
+  
+  // aux function to print the topics and the top M corresponding keywords per year
   def showTopics(ldaM : LDAModel, vocab : Array[String], mTopics : Int = 10): Unit = {
     ldaM.describeTopics(maxTermsPerTopic = mTopics).collect().foreach
     { r => {
