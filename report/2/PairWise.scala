@@ -33,6 +33,8 @@ object PairWise {
       .select($"member_name", $"speech")
       .na.drop()
       
+		
+		// strip accents from greek content
     val check = udf((colValue: String) => {StringUtils.stripAccents(colValue)})
 	val df15 = df.select($"member_name", check($"speech").as("speech"))
 	
