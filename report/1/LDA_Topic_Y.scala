@@ -96,6 +96,7 @@ object LDA_Topic_Y {
 
 for (year <- 1989 to 2020) {
     breakable {
+      // 1995 is empty, so we have to skip it
       if (year == 1995) {
         break  // break out of the 'breakable', continue the outside loop
       } 
