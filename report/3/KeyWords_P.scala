@@ -16,6 +16,8 @@ import scala.collection.mutable
 
 // Program takes 1 parameter as argument (K), the number of top K most similar members
 
+// Same as KeyWords_P except we group by parliament party
+
 object KeyWords_P {
 
 
