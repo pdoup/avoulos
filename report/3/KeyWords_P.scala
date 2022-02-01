@@ -152,20 +152,6 @@ object KeyWords_P {
           r.getAs[WrappedArray[String]](1).mkString(",").toString) + ")")
       }.saveAsTextFile(s"file:///home/ozzy/Desktop/bd/Erwthma3/results_party_${year}")
 
-
-    /*
-
-    finalDF.rdd.
-        map { r : org.apache.spark.sql.Row =>
-            ((r.getAs[String](0), Array((year : Int, Array(
-                r.getAs[WrappedArray[String]](1).toArray.mkString(","))))))}.take(1)//.saveAsTextFile("test3")
-    */
-
-    //val x = sc.textFile("results_2015/part-00000").map(x => x.split(",")).map(x => x(1)).collect
-
-
-
-
     ss.stop()
   }
 }
