@@ -38,13 +38,16 @@ object KeyWords_M {
     // keep rows of a specific year
     import org.apache.spark.sql.functions.{to_date, to_timestamp}
 
+	  
+    // convert sitting_date to date format type
     val df_date = df15.withColumn("date_y", to_date($"sitting_date", "dd/MM/yyyy")).drop("sitting_date")
     
    
     //df_date.printSchema
 
     val year = args(0).toInt
-
+    
+    // group speeches by member per year
     val speechesDF = df_date.where(s"year(date_y) == ${year}").groupBy("member_name")
       .agg(concat_ws(",", collect_list("speech")).as("speeches"))
 
@@ -54,6 +57,7 @@ object KeyWords_M {
 
     import org.apache.spark.ml.feature.RegexTokenizer
 
+    // tokenize speeches
     val speechesDF_tok = new RegexTokenizer().setInputCol("speechesClean")
       .setOutputCol("speechesTok")
       .setMinTokenLength(4)
@@ -72,12 +76,14 @@ object KeyWords_M {
 
     val filter_stopwords_udf = udf ( (v : scala.collection.mutable.WrappedArray[String]) => v.filterNot(w => stopwords contains w) )
 
+    // filter stopwords with udf
     val speechesFilteredDF = speechesDF_tok.withColumn("speechesTok1", filter_stopwords_udf(speechesDF_tok("speechesTok")))
 
    // speechesFilteredDF.show
 
     import org.apache.spark.ml.feature.{CountVectorizerModel, CountVectorizer}
 
+    // build Count Vectorizer model using the transformed speeches column
     val cvModel : CountVectorizerModel = new CountVectorizer().setInputCol("speechesTok1")
       .setOutputCol("features")
       .setMaxDF(10)
@@ -103,6 +109,7 @@ object KeyWords_M {
 
     val zippedVoc = cvModel.vocabulary.zipWithIndex
 
+    // get the n_most_freq words per member for that specific year
     val mostFreq_rdd : RDD[Array[String]]  = cvDF.select("features")
       .rdd
       .map(_.getAs[Vector](0))
@@ -124,7 +131,8 @@ object KeyWords_M {
     mostFreq_rdd.take(5)
 
     import org.apache.spark.sql.expressions.Window
-
+    
+    // create a new DF with ascending index and the name of each member
     val parties = speechesDF.select("member_name").rdd.map(w => w.toString.replaceAll("[\\[\\]]","").capitalize).toDF("name").withColumn("id", row_number().over(Window.orderBy("name"))).cache()
 
     val df2 = mostFreq_rdd.toDF(s"Most_Frequent_${year}")
@@ -137,31 +145,19 @@ object KeyWords_M {
 
    // parties.show
 
+    // concat the 2 DF's so we have one column for the member name and the other column the K most important keywords of that member as a list
     val finalDF = parties.join(mostFreqDF, "id").drop("id")
 
    // finalDF.show(10, false)
 
     import scala.collection.mutable.WrappedArray
 
-
+    // write results to an output folder
     finalDF.rdd.
       map { r : org.apache.spark.sql.Row =>
         (r.getAs[String](0), s"(${year},(" + (
           r.getAs[WrappedArray[String]](1).mkString(",").toString) + ")")
       }.saveAsTextFile(s"file:///home/ozzy/Desktop/bd/Erwthma3/results_member_${year}")
-
-
-    /*
-
-    finalDF.rdd.
-        map { r : org.apache.spark.sql.Row =>
-            ((r.getAs[String](0), Array((year : Int, Array(
-                r.getAs[WrappedArray[String]](1).toArray.mkString(","))))))}.take(1)//.saveAsTextFile("test3")
-    */
-
-    //val x = sc.textFile("results_2015/part-00000").map(x => x.split(",")).map(x => x(1)).collect
-
-
 
 
     ss.stop()
