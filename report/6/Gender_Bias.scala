@@ -7,7 +7,6 @@
 // inspect the results visually
 
 
-import org.apache.spark.ml.clustering.LDA
 import org.apache.spark.sql.{Dataset, Row, SparkSession}
 import org.apache.spark.ml.feature.{CountVectorizer, CountVectorizerModel, RegexTokenizer}
 import org.apache.spark.sql.functions.udf
