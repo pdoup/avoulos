@@ -1,7 +1,7 @@
 # Analysis of the Greek Parliament Proceedings '89 – '20
 Big Data Analytics Project - Fall 2021  - [Link to *iMEdD* GitHub repo](https://github.com/iMEdD-Lab/Greek_Parliament_Proceedings)
 
-![pap](https://thesocialist.gr/wp-content/uploads/2021/06/papandreou3_2306.jpg)
+![pap](https://www.in.gr/wp-content/uploads/2019/11/Vouli_EMEAgr_980x620_02.jpg)
 ---
 
 * [X] Task 1 : Given all speeches (for all years) we need to detect the different topics (i.e., thematic areas), most important keywords and how they change across years
